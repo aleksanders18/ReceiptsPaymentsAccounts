@@ -1,0 +1,14 @@
+.total-number {
+  text-align: left;
+}
+
+.totalRow {
+  font-weight: bold;
+}
+
+.totalFigures {
+  text-align: center;
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999;
+  width: auto;
+}

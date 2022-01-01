@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="r&p.js"></script>
+  </head>
+  <header>
+    <h1 style="text-align: center; width: 100%">
+      Receipts and Payments Accounts
+    </h1>
+  </header>
+  <body>
+    <section id="accounts">
+      <table id="accountsTable">
+        <thead id="container" onclick="toggleHeaders()">
+          <th></th>
+          <th id="UnrestrictedFunds"><span>Unrestricted Funds (£)</span></th>
+          <th id="RestrictedFunds"><span>Restricted Funds (£)</span></th>
+          <th id="EndowmentFunds"><span>Endowment Funds (£)</span></th>
+          <th id="TotalFunds"><span>Total Funds (£)</span></th>
+          <th id="PriorFunds"><span>Prior Year Funds (£)</span></th>
+        </thead>
+        <tbody id="ReceiptsTable">
+          <tr>
+            <td style="font-weight: bold">Receipts</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="receipt1" value="Receipt 1" required />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="u1r"
+                onchange="updateReceiptFigs()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="r1r"
+                onchange="updateReceiptFigs()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="e1r"
+                onchange="updateReceiptFigs()"
+              />
+            </td>
+            <td><input type="number" value="0" id="t1r" disabled /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="p1r"
+                onchange="updateReceiptFigs()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="addReceipt()">Add Receipt</button></td>
+          </tr>
+        </tbody>
+        <tbody id="TotalReceipts">
+          <tr style="font-weight: bold">
+            <td>Total Receipts</td>
+            <td id="uFundsRTotal" class="total-number">0</td>
+            <td id="rFundsRTotal" class="total-number">0</td>
+            <td id="eFundsRTotal" class="total-number">0</td>
+            <td id="tFundsRTotal" class="total-number">0</td>
+            <td id="pFundsRTotal" class="total-number">0</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td><br /></td>
+          </tr>
+        </tbody>
+        <tbody id="PaymentsTable">
+          <tr>
+            <td style="font-weight: bold">Payments</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="payments1" value="Payments 1" required />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="u1p"
+                onchange="updatePaymentFigs()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="r1p"
+                onchange="updatePaymentFigs()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="e1p"
+                onchange="updatePaymentFigs()"
+              />
+            </td>
+            <td><input type="number" value="0" id="t1p" disabled /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="p1p"
+                onchange="updatePaymentFigs()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="addPayment()">Add Payments</button></td>
+          </tr>
+        </tbody>
+        <tbody id="TotalPayments">
+          <tr style="font-weight: bold">
+            <td>Total Payments</td>
+            <td id="uFundsPTotal" class="total-number">0</td>
+            <td id="rFundsPTotal" class="total-number">0</td>
+            <td id="eFundsPTotal" class="total-number">0</td>
+            <td id="tFundsPTotal" class="total-number">0</td>
+            <td id="pFundsPTotal" class="total-number">0</td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <td><br /></td>
+          </tr>
+          <tr style="font-weight: bold">
+            <td>Net Receipts/Payments</td>
+            <td id="uNet" class="total-number">0</td>
+            <td id="rNet" class="total-number">0</td>
+            <td id="eNet" class="total-number">0</td>
+            <td id="tNet" class="total-number">0</td>
+            <td id="pNet" class="total-number">0</td>
+          </tr>
+          <tr>
+            <td><br /></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Transfers between funds</td>
+            <td>
+              <input
+                type="number"
+                id="uTransfer"
+                value="0"
+                onchange="updateTransfers()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="rTransfer"
+                value="0"
+                onchange="updateTransfers()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="eTransfer"
+                value="0"
+                onchange="updateTransfers()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="tTransfer"
+                value="0"
+                onchange="updateTransfers()"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="pTransfer"
+                value="0"
+                onchange="updateTransfers()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Cash funds last year end</td>
+            <td>
+              <input
+                type="number"
+                id="uOpening"
+                value="0"
+                onchange="updateFunds()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="rOpening"
+                value="0"
+                onchange="updateFunds()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="eOpening"
+                value="0"
+                onchange="updateFunds()"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="tOpening"
+                value="0"
+                onchange="updateFunds()"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="pOpening"
+                value="0"
+                onchange="updateFunds()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <br />
+          </tr>
+          <tr style="font-weight: bold">
+            <td>Cash funds this year end</td>
+            <td id="uClosing" class="total-number">0</td>
+            <td id="rClosing" class="total-number">0</td>
+            <td id="eClosing" class="total-number">0</td>
+            <td id="tClosing" class="total-number">0</td>
+            <td id="pClosing" class="total-number">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div><br /><br /><br /></div>
+    <section>
+      <form>
+        <table name="options" id="options">
+          <tr>
+            <td><label for="charityName">Charity Name</label></td>
+            <td>
+              <input id="charityName" type="text" value="Charity 123" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="yearEnd">Year End</label></td>
+            <td>
+              <input type="date" id="yearEnd" value="2021-03-31" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="fontSelection">Font</label></td>
+            <td>
+              <select name="fontSelection" id="fontSelection">
+                <option style="font-family: Verdana" value="Verdana">
+                  Verdana
+                </option>
+                <option style="font-family: Calibri" value="Calibri">
+                  Calibri
+                </option>
+                <option
+                  style="font-family: 'Times New Roman'"
+                  value="Times New Roman"
+                >
+                  Times New Roman
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="removeRows">Delete Blank Rows?</label></td>
+            <td>
+              <input type="checkbox" id="removeRows" value="removeRows" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="button" value="Print" onclick="print()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statement of Assets and Liabilities</title>
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="SAL.js"></script>
+  </head>
+  <header>
+    <h1 style="text-align: center; width: 100%">
+      Statement of Assets and Liabilities
+    </h1>
+  </header>
+  <body>
+    <section id="accounts">
+      <table id="notes1">
+        <thead>
+          <th>Note</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody id="bankTable">
+          <tr>
+            <th>1</th>
+            <th style="text-align: left">Cash Funds</th>
+            <th>Details</th>
+            <th>Funds to which asset belongs</th>
+            <th>Total Funds (£)</th>
+            <th>Prior Year Funds (£)</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="bankInclude">Include Note?</label
+              ><input
+                type="checkbox"
+                name="bankInclude"
+                id="bankInclude"
+                checked
+              />
+            </td>
+            <td><input type="text" value="Cash in Bank" id="bank1" /></td>
+            <td><input type="text" id="bankFund1" value="Unrestricted" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="bankTotal1"
+                onchange="updateTotals('bank')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="bankPrior1"
+                onchange="updateTotals('bank')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="bankDelete">Delete Blank Rows?</label
+              ><input type="checkbox" name="bankDelete" id="bankDelete" />
+            </td>
+            <td><input type="text" value="Deposit Account" id="bank2" /></td>
+            <td><input type="text" id="bankFund2" value="Restricted" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="bankTotal2"
+                onchange="updateTotals('bank')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="bankPrior2"
+                onchange="updateTotals('bank')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><input type="text" value="Petty Cash" id="bank3" /></td>
+            <td><input type="text" id="bankFund3" value="Endowment" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="bankTotal3"
+                onchange="updateTotals('bank')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="bankPrior3"
+                onchange="updateTotals('bank')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button onclick="addRow('bank')">Add Bank Row</button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="totalRow">
+            <td></td>
+            <td></td>
+            <td>Total Cash Funds</td>
+            <td></td>
+            <td><figure class="totalFigures" id="bankTotal">0</figure></td>
+            <td><figure class="totalFigures" id="bankPrior">0</figure></td>
+          </tr>
+        </tbody>
+        <tbody id="mAssetTable">
+          <tr>
+            <th>2</th>
+            <th style="text-align: left">Other Monetary Assets</th>
+            <th>Details</th>
+            <th>Funds to which asset belongs</th>
+            <th>Cost (£)</th>
+            <th>Current Value (£)</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="mAssetInclude">Include Note?</label
+              ><input
+                type="checkbox"
+                name="mAssetInclude"
+                id="mAssetInclude"
+                checked
+              />
+            </td>
+            <td>
+              <input type="text" value="Other Monetary Asset 1" id="mAsset1" />
+            </td>
+            <td>
+              <input type="text" value="Unrestricted" id="mAssetFund1" />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="mAssetCost1"
+                onchange="updateTotals('mAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="mAssetValue1"
+                onchange="updateTotals('mAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="mAssetDelete">Delete Blank Rows?</label
+              ><input type="checkbox" name="mAssetDelete" id="mAssetDelete" />
+            </td>
+            <td>
+              <input type="text" value="Other Monetary Asset 2" id="mAsset2" />
+            </td>
+            <td>
+              <input type="text" value="Restricted" id="mAssetFund2" />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="mAssetCost2"
+                onchange="updateTotals('mAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="mAssetValue2"
+                onchange="updateTotals('mAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <input type="text" value="Other Monetary Asset 3" id="mAsset3" />
+            </td>
+            <td>
+              <input type="text" value="Endowment" id="mAssetFund3" />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="mAssetCost3"
+                onchange="updateTotals('mAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="mAssetValue3"
+                onchange="updateTotals('mAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button onclick="addRow('mAsset')">Add Monetary Asset Row</button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="totalRow">
+            <td></td>
+            <td></td>
+            <td>Total Other Monetary Assets</td>
+            <td></td>
+            <td><figure class="totalFigures" id="mAssetCost">0</figure></td>
+            <td><figure class="totalFigures" id="mAssetValue">0</figure></td>
+          </tr>
+        </tbody>
+        <tbody id="iAssetTable">
+          <tr>
+            <th>3</th>
+            <th style="text-align: left">Investment Assets</th>
+            <th>Details</th>
+            <th>Funds to which asset belongs</th>
+            <th>Cost (£)</th>
+            <th>Current Value (£)</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="iAssetInclude">Include Note?</label
+              ><input
+                type="checkbox"
+                name="iAssetInclude"
+                id="iAssetInclude"
+                checked
+              />
+            </td>
+            <td>
+              <input type="text" value="Investment Asset 1" id="iAsset1" />
+            </td>
+            <td><input type="text" value="Unrestricted" id="iAssetFund1" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="iAssetCost1"
+                onchange="updateTotals('iAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="iAssetValue1"
+                onchange="updateTotals('iAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="iAssetDelete">Delete Blank Rows?</label
+              ><input type="checkbox" name="iAssetDelete" id="iAssetDelete" />
+            </td>
+            <td>
+              <input type="text" value="Investment Asset 2" id="iAsset2" />
+            </td>
+            <td><input type="text" value="Restricted" id="iAssetFund2" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="iAssetCost2"
+                onchange="updateTotals('iAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="iAssetValue2"
+                onchange="updateTotals('iAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <input type="text" value="Investment Asset 3" id="iAsset3" />
+            </td>
+            <td><input type="text" value="Endowment" id="iAssetFund3" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="iAssetCost3"
+                onchange="updateTotals('iAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="iAssetValue3"
+                onchange="updateTotals('iAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button onclick="addRow('iAsset')">
+                Add Investment Asset Row
+              </button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="totalRow">
+            <td></td>
+            <td></td>
+            <td>Total Investment Assets</td>
+            <td></td>
+            <td><figure class="totalFigures" id="iAssetCost">0</figure></td>
+            <td><figure class="totalFigures" id="iAssetValue">0</figure></td>
+          </tr>
+        </tbody>
+        <tbody id="fAssetTable">
+          <tr>
+            <th>4</th>
+            <th style="text-align: left; white-space: normal; max-width: 150px">
+              Assets retained for the charity's own use
+            </th>
+            <th>Details</th>
+            <th>Funds to which asset belongs</th>
+            <th>Cost (£)</th>
+            <th>Current Value (£)</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="fAssetInclude">Include Note?</label
+              ><input
+                type="checkbox"
+                name="fAssetInclude"
+                id="fAssetInclude"
+                checked
+              />
+            </td>
+            <td>
+              <input type="text" value="Asset 1" id="fAsset1" />
+            </td>
+            <td><input type="text" value="Unrestricted" id="fAssetFund1" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="fAssetCost1"
+                onchange="updateTotals('fAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="fAssetValue1"
+                onchange="updateTotals('fAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="fAssetDelete">Delete Blank Rows?</label
+              ><input type="checkbox" name="fAssetDelete" id="fAssetDelete" />
+            </td>
+            <td>
+              <input type="text" value="Asset 2" id="fAsset2" />
+            </td>
+            <td><input type="text" value="Restricted" id="fAssetFund2" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="fAssetCost2"
+                onchange="updateTotals('fAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="fAssetValue2"
+                onchange="updateTotals('fAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <input type="text" value="Asset 3" id="fAsset3" />
+            </td>
+            <td><input type="text" value="Endowment" id="fAssetFund3" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="fAssetCost3"
+                onchange="updateTotals('fAsset')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="fAssetValue3"
+                onchange="updateTotals('fAsset')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button onclick="addRow('fAsset')">Add Asset Row</button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="totalRow">
+            <td></td>
+            <td></td>
+            <td>Total Assets</td>
+            <td></td>
+            <td><figure class="totalFigures" id="fAssetCost">0</figure></td>
+            <td><figure class="totalFigures" id="fAssetValue">0</figure></td>
+          </tr>
+        </tbody>
+        <tbody id="liabilityTable">
+          <tr>
+            <th>5</th>
+            <th style="text-align: left">Liabilities</th>
+            <th>Details</th>
+            <th>Funds to which asset belongs</th>
+            <th>Cost (£)</th>
+            <th>Current Value (£)</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="liabilityInclude">Include Note?</label
+              ><input
+                type="checkbox"
+                name="liabilityInclude"
+                id="liabilityInclude"
+                checked
+              />
+            </td>
+            <td>
+              <input type="text" value="Liability 1" id="liability1" />
+            </td>
+            <td>
+              <input type="text" value="Unrestricted" id="liabilityFund1" />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="liabilityCost1"
+                onchange="updateTotals('liability')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="liabilityValue1"
+                onchange="updateTotals('liability')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="liabilityDelete">Delete Blank Rows?</label
+              ><input
+                type="checkbox"
+                name="liabilityDelete"
+                id="liabilityDelete"
+              />
+            </td>
+            <td>
+              <input type="text" value="Liability 2" id="liability2" />
+            </td>
+            <td>
+              <input type="text" value="Restricted" id="liabilityFund2" />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="liabilityCost2"
+                onchange="updateTotals('liability')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="liabilityValue2"
+                onchange="updateTotals('liability')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <input type="text" value="Liability 3" id="liability3" />
+            </td>
+            <td><input type="text" value="Endowment" id="liabilityFund3" /></td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="liabilityCost3"
+                onchange="updateTotals('liability')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                value="0"
+                id="liabilityValue3"
+                onchange="updateTotals('liability')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button onclick="addRow('liability')">Add Liability Row</button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="totalRow">
+            <td></td>
+            <td></td>
+            <td>Total Liabilities</td>
+            <td></td>
+            <td><figure class="totalFigures" id="liabilityCost">0</figure></td>
+            <td><figure class="totalFigures" id="liabilityValue">0</figure></td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="notes2">
+        <tbody id="fundTable">
+          <tr>
+            <th>6</th>
+            <th>Movement of Funds</th>
+            <th>Fund Name</th>
+            <th>Opening Balance (£)</th>
+            <th>Income (£)</th>
+            <th>Expenditure (£)</th>
+            <th>Transfers (£)</th>
+            <th>Closing Balance (£)</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="fundInclude">Include Note?</label
+              ><input
+                type="checkbox"
+                name="fundInclude"
+                id="fundInclude"
+                checked
+              />
+            </td>
+            <td><input type="text" id="fund1" value="Unrestricted Funds" /></td>
+            <td>
+              <input
+                type="number"
+                id="opening1"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="income1"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="expenditure1"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="transfers1"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="closing1"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="fundDelete">Delete Blank Rows?</label
+              ><input type="checkbox" name="fundDelete" id="fundDelete" />
+            </td>
+            <td><input type="text" id="fund2" value="Restricted Funds" /></td>
+            <td>
+              <input
+                type="number"
+                id="opening2"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="income2"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="expenditure2"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="transfers2"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="closing2"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="fund3" value="Endowment Funds" /></td>
+            <td>
+              <input
+                type="number"
+                id="opening3"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="income3"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="expenditure3"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="transfers3"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="closing3"
+                value="0"
+                onchange="updateTotals('fund')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button onclick="addRow('fund')">Add Fund Row</button>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="totalRow">
+            <td></td>
+            <td></td>
+            <td>Total</td>
+            <td class="totalFigures" id="openingTotal">0</td>
+            <td class="totalFigures" id="incomeTotal">0</td>
+            <td class="totalFigures" id="expenditureTotal">0</td>
+            <td class="totalFigures" id="transfersTotal">0</td>
+            <td class="totalFigures" id="closingTotal">0</td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="notes3">
+        <tr>
+          <th>Notes</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>a)</th>
+          <td onclick="toggleHeaders()">
+            <span
+              >The financial statements have been prepared in accordance with
+              the Charities Act 2011. As a lower-income charity under section
+              133 of the 2011 Act, the trustees have elected to prepare the
+              charity's financial statements using the Receipts & Payments
+              basis.
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <button onclick="addNote()">Add New Note</button>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <br /><br />
+    <section>
+      <form>
+        <table name="options" id="options">
+          <tr>
+            <td><label for="charityName">Charity Name</label></td>
+            <td>
+              <input id="charityName" type="text" value="Charity 123" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="yearEnd">Year End</label></td>
+            <td>
+              <input type="date" id="yearEnd" value="2021-03-31" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="fontSelection">Font</label></td>
+            <td>
+              <select name="fontSelection" id="fontSelection">
+                <option style="font-family: Verdana" value="Verdana">
+                  Verdana
+                </option>
+                <option style="font-family: Calibri" value="Calibri">
+                  Calibri
+                </option>
+                <option
+                  style="font-family: 'Times New Roman'"
+                  value="Times New Roman"
+                >
+                  Times New Roman
+                </option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input
+                type="button"
+                value="Print Accounts"
+                onclick="printPage()"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </body>
+</html>
