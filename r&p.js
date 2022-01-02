@@ -1,1 +1,481 @@
-(function(_0x23dcba,_0x36f1db){const _0x3ae350=_0x3556,_0x46e928=_0x23dcba();while(!![]){try{const _0x2fed05=parseInt(_0x3ae350(0x1af))/0x1+-parseInt(_0x3ae350(0x1d6))/0x2+parseInt(_0x3ae350(0x1b6))/0x3*(parseInt(_0x3ae350(0x1ce))/0x4)+-parseInt(_0x3ae350(0x186))/0x5*(parseInt(_0x3ae350(0x1a9))/0x6)+-parseInt(_0x3ae350(0x195))/0x7*(parseInt(_0x3ae350(0x1e9))/0x8)+parseInt(_0x3ae350(0x189))/0x9+parseInt(_0x3ae350(0x1c8))/0xa;if(_0x2fed05===_0x36f1db)break;else _0x46e928['push'](_0x46e928['shift']());}catch(_0x4604a3){_0x46e928['push'](_0x46e928['shift']());}}}(_0x1c89,0x34504));function _0x1c89(){const _0x1a7a65=['eFundsPTotal','<input\x0atype=\x22number\x22\x0avalue=\x220\x22\x0aid=\x22r','removeRows','span','\x22\x20required\x20/>','241248zBVNqA','fontFamily','document','September','tNet','charityName','305419XdjGne','uOpening','rows','write','tFundsRTotal','<input\x0a\x20\x20type=\x22number\x22\x0a\x20\x20value=\x220\x22\x0a\x20\x20id=\x22t','value','46509CJqMnL','getFullYear','rTransfer','<input\x0atype=\x22number\x22\x0avalue=\x220\x22\x0aid=\x22e','toUpperCase','July','eOpening','setAttribute','tagName','slice','input','cells','p\x22\x0a\x20\x20onchange=\x22updatePaymentFigs()\x22\x0a\x20\x20/>','insertRow','open','uFundsPTotal','uTransfer','pTransfer','3016290VarAbV','r\x22\x0adisabled\x0a/>','<input\x0atype=\x22number\x22\x0avalue=\x220\x22\x0aid=\x22p','rNet','deleteCell','style','12QrIbxa','body','eTransfer','rOpening','number','accountsTable','srcElement','rowIndex','126856PydQFH','eClosing','SPAN','type','p\x22\x20\x0a\x20\x20onchange=\x22updatePaymentFigs()\x22\x0a\x20\x20/>','eNet','.total-number','accounts','\x22\x20value=\x22Payment\x20','target','parentNode','<input\x0atype=\x22number\x22\x0avalue=\x220\x22\x0aid=\x22t','innerHTML','header','<input\x0atype=\x22number\x22\x0avalue=\x220\x22\x0aid=\x22u','deleteRow','December','\x22\x20value=\x22Receipt\x20','r\x22\x0aonchange=\x22updateReceiptFigs()\x22\x0a/>','8tVlhyt','display','event','insertCell','yearEnd','button','eFundsRTotal','tTransfer','June','getElementsByTagName','tOpening','checked','40sdmSnN','removeChild','uClosing','1425078WnSXwm','tBodies','none','\x20<br>\x20Receipts\x20and\x20Payments\x20Accounts\x20<br>for\x20the\x20year\x20ended\x20','pFundsPTotal','pNet','<h3>','getMonth','center','getElementById','<input\x0a\x20\x20type=\x22number\x22\x0a\x20\x20value=\x220\x22\x0a\x20\x20id=\x22u','p\x22\x0a\x20\x20disabled\x0a\x20\x20/>','1487717OnGSVN','rClosing','January','<input\x20type=\x22text\x22\x20id=\x22payment','March','length','getDate','uNet','createElement','pFundsRTotal','rFundsRTotal','February','<input\x0a\x20\x20type=\x22number\x22\x0a\x20\x20value=\x220\x22\x0a\x20\x20id=\x22p','tClosing','rFundsPTotal'];_0x1c89=function(){return _0x1a7a65;};return _0x1c89();}function _0x3556(_0x4ca267,_0x374052){const _0x1c894d=_0x1c89();return _0x3556=function(_0x355605,_0x29fab7){_0x355605=_0x355605-0x17f;let _0x3e1ddf=_0x1c894d[_0x355605];return _0x3e1ddf;},_0x3556(_0x4ca267,_0x374052);}const updateReceiptFigs=()=>{const _0x102077=_0x3556,_0x2cb371=document[_0x102077(0x192)](_0x102077(0x1d3));let _0x2c1879=_0x2cb371['tBodies'][0x0][_0x102077(0x1b1)][_0x102077(0x19a)]-0x1,_0x23b01f,_0x31185f=0x0,_0x5afb35=0x0,_0x2efdb1=0x0,_0x2e8e77=0x0,_0x56f0ec=0x0,_0x530528=0x0,_0x5b24ee=0x0,_0x1e62e2=0x0,_0x570d39=0x0,_0x33e14f=0x0;for(_0x23b01f=0x1;_0x23b01f<_0x2c1879;_0x23b01f++){_0x31185f=Number(document[_0x102077(0x192)]('u'+String(_0x23b01f)+'r')[_0x102077(0x1b5)]),_0x5afb35=Number(document[_0x102077(0x192)]('r'+String(_0x23b01f)+'r')[_0x102077(0x1b5)]),_0x2efdb1=Number(document[_0x102077(0x192)]('e'+String(_0x23b01f)+'r')[_0x102077(0x1b5)]),_0x56f0ec=Number(document['getElementById']('p'+String(_0x23b01f)+'r')[_0x102077(0x1b5)]),_0x2e8e77=_0x31185f+_0x5afb35+_0x2efdb1,document['getElementById']('t'+String(_0x23b01f)+'r')[_0x102077(0x1b5)]=_0x2e8e77,_0x530528+=_0x31185f,_0x5b24ee+=_0x5afb35,_0x1e62e2+=_0x2efdb1,_0x570d39+=_0x2e8e77,_0x33e14f+=_0x56f0ec;}document['getElementById']('uFundsRTotal')['innerHTML']=_0x530528,document[_0x102077(0x192)](_0x102077(0x19f))['innerHTML']=_0x5b24ee,document[_0x102077(0x192)](_0x102077(0x180))[_0x102077(0x1e2)]=_0x1e62e2,document['getElementById']('tFundsRTotal')[_0x102077(0x1e2)]=_0x570d39,document['getElementById']('pFundsRTotal')[_0x102077(0x1e2)]=_0x33e14f,updateNet();},addReceipt=()=>{const _0xe4e210=_0x3556,_0x2101da=document['getElementById'](_0xe4e210(0x1d3));let _0x3ca0ea=_0x2101da[_0xe4e210(0x18a)][0x0][_0xe4e210(0x1b1)]['length'],_0x126d36=_0x2101da[_0xe4e210(0x1c3)](_0x3ca0ea),_0x1eeedb=_0x126d36['insertCell'](0x0);_0x3ca0ea--,_0x1eeedb[_0xe4e210(0x1e2)]='<input\x20type=\x22text\x22\x20id=\x22receipt'+String(_0x3ca0ea)+_0xe4e210(0x1e7)+String(_0x3ca0ea)+_0xe4e210(0x1a8);let _0x1dfbd5=_0x126d36[_0xe4e210(0x1ec)](0x1);_0x1dfbd5['innerHTML']=_0xe4e210(0x1e4)+_0x3ca0ea+'r\x22\x0aonchange=\x22updateReceiptFigs()\x22\x0a/>';let _0x552659=_0x126d36[_0xe4e210(0x1ec)](0x2);_0x552659[_0xe4e210(0x1e2)]=_0xe4e210(0x1a5)+_0x3ca0ea+_0xe4e210(0x1e8);let _0x2e1e5b=_0x126d36[_0xe4e210(0x1ec)](0x3);_0x2e1e5b[_0xe4e210(0x1e2)]=_0xe4e210(0x1b9)+_0x3ca0ea+_0xe4e210(0x1e8);let _0x2248c9=_0x126d36[_0xe4e210(0x1ec)](0x4);_0x2248c9[_0xe4e210(0x1e2)]=_0xe4e210(0x1e1)+_0x3ca0ea+_0xe4e210(0x1c9);let _0x174eb7=_0x126d36[_0xe4e210(0x1ec)](0x5);_0x174eb7['innerHTML']=_0xe4e210(0x1ca)+_0x3ca0ea+'r\x22\x20\x0aonchange=\x22updateReceiptFigs()\x22\x0a/>';},updatePaymentFigs=()=>{const _0x224ea7=_0x3556,_0x2cefbf=document[_0x224ea7(0x192)](_0x224ea7(0x1d3));let _0x1a5f73=_0x2cefbf[_0x224ea7(0x18a)][0x3]['rows']['length']-0x1,_0x2d5cad,_0x5d9aa5=0x0,_0x5f4b17=0x0,_0x5d49ed=0x0,_0x385448=0x0,_0x56cbd7=0x0,_0x2e7d3c=0x0,_0x4a0dbe=0x0,_0x55e119=0x0,_0x1a2057=0x0,_0x596d66=0x0;for(_0x2d5cad=0x1;_0x2d5cad<_0x1a5f73;_0x2d5cad++){_0x5d9aa5=Number(document['getElementById']('u'+String(_0x2d5cad)+'p')[_0x224ea7(0x1b5)]),_0x5f4b17=Number(document['getElementById']('r'+String(_0x2d5cad)+'p')[_0x224ea7(0x1b5)]),_0x5d49ed=Number(document[_0x224ea7(0x192)]('e'+String(_0x2d5cad)+'p')['value']),_0x56cbd7=Number(document[_0x224ea7(0x192)]('p'+String(_0x2d5cad)+'p')[_0x224ea7(0x1b5)]),_0x385448=_0x5d9aa5+_0x5f4b17+_0x5d49ed,document[_0x224ea7(0x192)]('t'+String(_0x2d5cad)+'p')[_0x224ea7(0x1b5)]=_0x385448,_0x2e7d3c+=_0x5d9aa5,_0x4a0dbe+=_0x5f4b17,_0x55e119+=_0x5d49ed,_0x1a2057+=_0x385448,_0x596d66+=_0x56cbd7;}document[_0x224ea7(0x192)](_0x224ea7(0x1c5))['innerHTML']=_0x2e7d3c,document[_0x224ea7(0x192)](_0x224ea7(0x1a3))[_0x224ea7(0x1e2)]=_0x4a0dbe,document[_0x224ea7(0x192)](_0x224ea7(0x1a4))[_0x224ea7(0x1e2)]=_0x55e119,document[_0x224ea7(0x192)]('tFundsPTotal')[_0x224ea7(0x1e2)]=_0x1a2057,document[_0x224ea7(0x192)](_0x224ea7(0x18d))[_0x224ea7(0x1e2)]=_0x596d66,updateNet();},addPayment=()=>{const _0xb6fc88=_0x3556,_0x137e48=document[_0xb6fc88(0x192)](_0xb6fc88(0x1d3));let _0x4da692=_0x137e48['tBodies'][0x0][_0xb6fc88(0x1b1)][_0xb6fc88(0x19a)]+_0x137e48['tBodies'][0x1][_0xb6fc88(0x1b1)]['length']+_0x137e48[_0xb6fc88(0x18a)][0x2][_0xb6fc88(0x1b1)][_0xb6fc88(0x19a)]+_0x137e48['tBodies'][0x3][_0xb6fc88(0x1b1)][_0xb6fc88(0x19a)],_0x53ed0f=_0x137e48[_0xb6fc88(0x1c3)](_0x4da692),_0x1ec7b1=_0x53ed0f[_0xb6fc88(0x1ec)](0x0);_0x4da692=_0x137e48['tBodies'][0x3][_0xb6fc88(0x1b1)][_0xb6fc88(0x19a)]-0x2,_0x1ec7b1[_0xb6fc88(0x1e2)]=_0xb6fc88(0x198)+String(_0x4da692)+_0xb6fc88(0x1de)+String(_0x4da692)+_0xb6fc88(0x1a8);let _0x4d0c1e=_0x53ed0f['insertCell'](0x1);_0x4d0c1e[_0xb6fc88(0x1e2)]=_0xb6fc88(0x193)+_0x4da692+'p\x22\x0a\x20\x20onchange=\x22updatePaymentFigs()\x22\x0a\x20\x20/>';let _0x39ff40=_0x53ed0f['insertCell'](0x2);_0x39ff40[_0xb6fc88(0x1e2)]='<input\x0a\x20\x20type=\x22number\x22\x0a\x20\x20value=\x220\x22\x0a\x20\x20id=\x22r'+_0x4da692+_0xb6fc88(0x1c2);let _0x2de390=_0x53ed0f[_0xb6fc88(0x1ec)](0x3);_0x2de390[_0xb6fc88(0x1e2)]='<input\x0a\x20\x20type=\x22number\x22\x0a\x20\x20value=\x220\x22\x0a\x20\x20id=\x22e'+_0x4da692+_0xb6fc88(0x1c2);let _0x389309=_0x53ed0f[_0xb6fc88(0x1ec)](0x4);_0x389309[_0xb6fc88(0x1e2)]=_0xb6fc88(0x1b4)+_0x4da692+_0xb6fc88(0x194);let _0x291c73=_0x53ed0f[_0xb6fc88(0x1ec)](0x5);_0x291c73[_0xb6fc88(0x1e2)]=_0xb6fc88(0x1a1)+_0x4da692+_0xb6fc88(0x1da);},updateNet=()=>{const _0x20c18c=_0x3556,_0x3e14aa=Number(document[_0x20c18c(0x192)]('uFundsRTotal')[_0x20c18c(0x1e2)]),_0x1c6fe0=Number(document[_0x20c18c(0x192)](_0x20c18c(0x19f))[_0x20c18c(0x1e2)]),_0x5ad157=Number(document[_0x20c18c(0x192)](_0x20c18c(0x180))[_0x20c18c(0x1e2)]),_0x166c2e=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1b3))['innerHTML']),_0x3a95dc=Number(document[_0x20c18c(0x192)](_0x20c18c(0x19e))[_0x20c18c(0x1e2)]),_0x3b347b=Number(document['getElementById'](_0x20c18c(0x1c5))[_0x20c18c(0x1e2)]),_0x1a54f8=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1a3))[_0x20c18c(0x1e2)]),_0x96340e=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1a4))[_0x20c18c(0x1e2)]),_0x503051=Number(document['getElementById']('tFundsPTotal')[_0x20c18c(0x1e2)]),_0x335121=Number(document[_0x20c18c(0x192)](_0x20c18c(0x18d))[_0x20c18c(0x1e2)]);let _0x41e8cc=_0x3e14aa-_0x3b347b,_0x3e802b=_0x1c6fe0-_0x1a54f8,_0x138bb3=_0x5ad157-_0x96340e,_0x136412=_0x166c2e-_0x503051,_0x342054=_0x3a95dc-_0x335121;document[_0x20c18c(0x192)](_0x20c18c(0x19c))[_0x20c18c(0x1e2)]=_0x41e8cc,document['getElementById'](_0x20c18c(0x1cb))['innerHTML']=_0x3e802b,document[_0x20c18c(0x192)](_0x20c18c(0x1db))['innerHTML']=_0x138bb3,document[_0x20c18c(0x192)](_0x20c18c(0x1ad))[_0x20c18c(0x1e2)]=_0x136412,document[_0x20c18c(0x192)](_0x20c18c(0x18e))[_0x20c18c(0x1e2)]=_0x342054;const _0xd9ae33=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1c6))[_0x20c18c(0x1b5)]),_0x1c224a=Number(document[_0x20c18c(0x192)]('rTransfer')[_0x20c18c(0x1b5)]),_0x6ee0c3=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1d0))[_0x20c18c(0x1b5)]),_0x5dcdc9=Number(document[_0x20c18c(0x192)](_0x20c18c(0x181))[_0x20c18c(0x1b5)]),_0x299e59=Number(document['getElementById'](_0x20c18c(0x1c7))[_0x20c18c(0x1b5)]),_0x243d05=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1b0))[_0x20c18c(0x1b5)]),_0xb86362=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1d1))[_0x20c18c(0x1b5)]),_0x466a7a=Number(document[_0x20c18c(0x192)](_0x20c18c(0x1bc))['value']),_0x2a0dca=Number(document['getElementById']('tOpening')[_0x20c18c(0x1b5)]),_0x4ff4ef=Number(document[_0x20c18c(0x192)]('pOpening')[_0x20c18c(0x1b5)]);document['getElementById'](_0x20c18c(0x188))[_0x20c18c(0x1e2)]=_0x41e8cc+_0xd9ae33+_0x243d05,document[_0x20c18c(0x192)](_0x20c18c(0x196))[_0x20c18c(0x1e2)]=_0x3e802b+_0x1c224a+_0xb86362,document[_0x20c18c(0x192)](_0x20c18c(0x1d7))[_0x20c18c(0x1e2)]=_0x138bb3+_0x6ee0c3+_0x466a7a,document[_0x20c18c(0x192)](_0x20c18c(0x1a2))[_0x20c18c(0x1e2)]=_0x136412+_0x5dcdc9+_0x2a0dca,document[_0x20c18c(0x192)]('pClosing')[_0x20c18c(0x1e2)]=_0x342054+_0x299e59+_0x4ff4ef;},updateTransfers=()=>{const _0x2d8702=_0x3556,_0xf9b22b=Number(document[_0x2d8702(0x192)]('uTransfer')[_0x2d8702(0x1b5)]),_0x4e5cf6=Number(document[_0x2d8702(0x192)](_0x2d8702(0x1b8))[_0x2d8702(0x1b5)]),_0x2e9443=Number(document[_0x2d8702(0x192)](_0x2d8702(0x1d0))[_0x2d8702(0x1b5)]);let _0x179c7a=document[_0x2d8702(0x192)]('tTransfer');_0x179c7a[_0x2d8702(0x1b5)]=_0xf9b22b+_0x4e5cf6+_0x2e9443,updateNet();},updateFunds=()=>{const _0xca1760=_0x3556,_0x5c6777=Number(document[_0xca1760(0x192)](_0xca1760(0x1b0))['value']),_0xd751bc=Number(document[_0xca1760(0x192)](_0xca1760(0x1d1))[_0xca1760(0x1b5)]),_0x1be945=Number(document[_0xca1760(0x192)](_0xca1760(0x1bc))[_0xca1760(0x1b5)]);let _0x16c58b=document['getElementById'](_0xca1760(0x184));_0x16c58b['value']=_0x5c6777+_0xd751bc+_0x1be945,updateNet();},print=()=>{const _0x2c9390=_0x3556;let _0x3f416d=document[_0x2c9390(0x192)](_0x2c9390(0x1dd))[_0x2c9390(0x1e2)],_0x357876=window[_0x2c9390(0x1c4)]();_0x357876['document'][_0x2c9390(0x1b2)](_0x3f416d);let _0x4a547b,_0x660310,_0x2edb39=document[_0x2c9390(0x192)](_0x2c9390(0x1d3))[_0x2c9390(0x183)](_0x2c9390(0x1c0)),_0x2f87d2,_0x289e8a=_0x357876['document'][_0x2c9390(0x192)](_0x2c9390(0x1d3))[_0x2c9390(0x183)]('input');inputCount=document[_0x2c9390(0x183)](_0x2c9390(0x1c0))[_0x2c9390(0x19a)]-0x5;for(_0x4a547b=inputCount;_0x4a547b>-0x1;_0x4a547b--){_0x660310=_0x2edb39[_0x4a547b]['value'],_0x2f87d2=document[_0x2c9390(0x19d)](_0x2c9390(0x1a7)),_0x2f87d2['innerHTML']=_0x660310;let _0x1c3f47=_0x289e8a[_0x4a547b]['parentNode'];_0x2edb39[_0x4a547b][_0x2c9390(0x1d9)]==_0x2c9390(0x1d2)&&_0x1c3f47[_0x2c9390(0x1bd)](_0x2c9390(0x1cd),'text-align:\x20center'),_0x1c3f47['removeChild'](_0x289e8a[_0x4a547b]),_0x1c3f47['appendChild'](_0x2f87d2);}let _0x10801d=_0x357876['document']['querySelectorAll'](_0x2c9390(0x1dc));for(_0x4a547b=0x0;_0x4a547b<_0x10801d[_0x2c9390(0x19a)];_0x4a547b++){_0x10801d[_0x4a547b]['setAttribute']('style','text-align:\x20center');}let _0x5c3e98=_0x357876[_0x2c9390(0x1ab)][_0x2c9390(0x192)](_0x2c9390(0x1d3));const _0x14ad0e=document[_0x2c9390(0x192)]('fontSelection')['value'];_0x5c3e98[_0x2c9390(0x1bd)](_0x2c9390(0x1cd),'font-family:\x20'+_0x14ad0e);let _0x1ef408=_0x5c3e98[_0x2c9390(0x183)](_0x2c9390(0x17f));for(_0x4a547b=_0x1ef408[_0x2c9390(0x19a)]-0x1;_0x4a547b>-0x1;_0x4a547b--){let _0x451f4f=_0x1ef408[_0x4a547b][_0x2c9390(0x1e0)];_0x451f4f[_0x2c9390(0x187)](_0x1ef408[_0x4a547b]);}const _0x2d0909=document[_0x2c9390(0x192)](_0x2c9390(0x1ae))[_0x2c9390(0x1b5)];let _0x156ea4=new Date(document[_0x2c9390(0x192)](_0x2c9390(0x1ed))[_0x2c9390(0x1b5)]);_0x156ea4=changeDate(_0x156ea4);let _0x7ca13=_0x357876['document'][_0x2c9390(0x19d)](_0x2c9390(0x1e3));_0x7ca13[_0x2c9390(0x1e2)]=_0x2c9390(0x18f)+_0x2d0909+_0x2c9390(0x18c)+_0x156ea4+'</h3>';let _0x489bd7=_0x357876[_0x2c9390(0x1ab)][_0x2c9390(0x1cf)];_0x7ca13[_0x2c9390(0x1cd)][_0x2c9390(0x1aa)]=_0x14ad0e,_0x7ca13['style']['textAlign']=_0x2c9390(0x191),_0x489bd7[_0x2c9390(0x1e0)]['insertBefore'](_0x7ca13,_0x489bd7),deleteBlankFunds(_0x2edb39,inputCount,_0x357876),deleteBlankRows(_0x2edb39,inputCount,_0x357876);},changeDate=_0x458d47=>{const _0x28cb46=_0x3556,_0x4d40a2=[_0x28cb46(0x197),_0x28cb46(0x1a0),_0x28cb46(0x199),'April','May',_0x28cb46(0x182),_0x28cb46(0x1bb),'August',_0x28cb46(0x1ac),'October','November',_0x28cb46(0x1e6)],_0x3024f3=_0x4d40a2[_0x458d47[_0x28cb46(0x190)]()],_0x1c9bfd=_0x458d47[_0x28cb46(0x1b7)](),_0x51821c=_0x458d47[_0x28cb46(0x19b)]();return _0x51821c+'\x20'+_0x3024f3+'\x20'+_0x1c9bfd;},deleteBlankFunds=(_0x2fa488,_0x135904,_0x36d673)=>{const _0x7dfea5=_0x3556;let _0x5c58e3=0x0,_0x346c4a=0x0,_0x316c54=0x0,_0x497712=0x0,_0x568310=_0x36d673['document'][_0x7dfea5(0x192)]('accountsTable')['rows'];for(i=_0x135904;i>-0x1;i--){if(_0x2fa488[i][_0x7dfea5(0x1d9)]=='number'){if(_0x2fa488[i]['id'][_0x7dfea5(0x1bf)](0x0,0x1)=='r')_0x5c58e3+=0x1,_0x2fa488[i]['value']=='0'&&(_0x346c4a+=0x1);else _0x2fa488[i]['id'][_0x7dfea5(0x1bf)](0x0,0x1)=='e'&&(_0x316c54+=0x1,_0x2fa488[i][_0x7dfea5(0x1b5)]=='0'&&(_0x497712+=0x1));}}if(_0x316c54===_0x497712)for(let _0x50452a=0x0;_0x50452a<_0x568310[_0x7dfea5(0x19a)];_0x50452a++){_0x568310[_0x50452a][_0x7dfea5(0x1c1)][_0x7dfea5(0x19a)]>0x1&&_0x568310[_0x50452a][_0x7dfea5(0x1cc)](0x3);}if(_0x5c58e3===_0x346c4a)for(let _0x35937c=0x0;_0x35937c<_0x568310[_0x7dfea5(0x19a)];_0x35937c++){_0x568310[_0x35937c]['cells']['length']>0x1&&_0x568310[_0x35937c][_0x7dfea5(0x1cc)](0x2);}},deleteBlankRows=(_0x210b4b,_0x588bea,_0xd2832)=>{const _0x465e95=_0x3556;if(document[_0x465e95(0x192)](_0x465e95(0x1a6))[_0x465e95(0x185)]==!![]){let _0x18732f,_0x123694,_0x4d9091,_0xfdad80,_0x13fbf5;for(i=_0x588bea;i>-0x1;i--){let _0x15d67b=_0x210b4b[i]['id']['slice'](-0x2,-0x1);if(isNaN(Number(_0x15d67b))){}else{let _0x1bc16f=_0x210b4b[i]['id']['slice'](-0x1);_0x18732f=Number(document['getElementById']('u'+_0x15d67b+_0x1bc16f)['value']),_0x123694=Number(document[_0x465e95(0x192)]('r'+_0x15d67b+_0x1bc16f)[_0x465e95(0x1b5)]),_0x4d9091=Number(document[_0x465e95(0x192)]('e'+_0x15d67b+_0x1bc16f)[_0x465e95(0x1b5)]),_0xfdad80=Number(document['getElementById']('p'+_0x15d67b+_0x1bc16f)[_0x465e95(0x1b5)]);if(_0x1bc16f=='p')_0x18732f==0x0&&0x0==_0x4d9091&&0x0==_0xfdad80&&_0x123694==0x0&&(_0x13fbf5=_0x210b4b[i][_0x465e95(0x1e0)][_0x465e95(0x1e0)][_0x465e95(0x1d5)],_0xd2832[_0x465e95(0x1ab)]['getElementById']('accountsTable')[_0x465e95(0x1e5)](_0x13fbf5),i-=0x4);else _0x1bc16f=='r'?(_0x13fbf5=_0x210b4b[i]['parentNode'][_0x465e95(0x1e0)]['rowIndex'],_0xd2832[_0x465e95(0x1ab)]['getElementById']('accountsTable')[_0x465e95(0x1e5)](_0x13fbf5),i-=0x4):console['log'](_0x1bc16f);}}}},toggleHeaders=_0x29a86f=>{const _0x3b4f21=_0x3556;var _0x2bde13,_0x2cf13f,_0x7e081e;_0x29a86f=_0x29a86f||window[_0x3b4f21(0x1eb)],_0x2bde13=_0x29a86f[_0x3b4f21(0x1df)]||_0x29a86f[_0x3b4f21(0x1d4)],_0x2bde13&&_0x2bde13[_0x3b4f21(0x1be)][_0x3b4f21(0x1ba)]()===_0x3b4f21(0x1d8)&&(_0x2bde13[_0x3b4f21(0x1cd)][_0x3b4f21(0x1ea)]=_0x3b4f21(0x18b),_0x7e081e=_0x2bde13['innerHTML'],_0x2cf13f=document['createElement'](_0x3b4f21(0x1c0)),_0x2cf13f[_0x3b4f21(0x1d9)]='text',_0x2cf13f[_0x3b4f21(0x1b5)]=_0x7e081e,_0x2bde13[_0x3b4f21(0x1e0)]['insertBefore'](_0x2cf13f,_0x2bde13),_0x2cf13f['focus'](),_0x2cf13f['onblur']=function(){const _0x46e799=_0x3b4f21;_0x2bde13[_0x46e799(0x1e0)][_0x46e799(0x187)](_0x2cf13f),_0x2bde13[_0x46e799(0x1e2)]=_0x2cf13f['value']==''?'&nbsp;':_0x2cf13f[_0x46e799(0x1b5)],_0x2bde13[_0x46e799(0x1cd)][_0x46e799(0x1ea)]='';});};
+const updateReceiptFigs = () => {
+  // Set Table Variables
+  const table = document.getElementById("accountsTable");
+  let tRows = table.tBodies[0].rows.length - 1;
+
+  //Set Variables
+  let i,
+    uf = 0,
+    rf = 0,
+    ef = 0,
+    total = 0,
+    pf = 0,
+    urTotal = 0,
+    rTotal = 0,
+    eTotal = 0,
+    totalFunds = 0,
+    pTotal = 0;
+
+  //Loop through rows to get column totals
+  for (i = 1; i < tRows; i++) {
+    uf = Number(document.getElementById(`u${String(i)}r`).value);
+    rf = Number(document.getElementById(`r${String(i)}r`).value);
+    ef = Number(document.getElementById(`e${String(i)}r`).value);
+    pf = Number(document.getElementById(`p${String(i)}r`).value);
+    total = uf + rf + ef;
+    document.getElementById(`t${String(i)}r`).value = total;
+    urTotal += uf;
+    rTotal += rf;
+    eTotal += ef;
+    totalFunds += total;
+    pTotal += pf;
+  }
+
+  // Calculate and change Receipt Totals
+  document.getElementById("uFundsRTotal").innerHTML = urTotal;
+  document.getElementById("rFundsRTotal").innerHTML = rTotal;
+  document.getElementById("eFundsRTotal").innerHTML = eTotal;
+  document.getElementById("tFundsRTotal").innerHTML = totalFunds;
+  document.getElementById("pFundsRTotal").innerHTML = pTotal;
+
+  //Update net figures
+  updateNet();
+};
+
+const addReceipt = () => {
+  //Create New Row
+  const table = document.getElementById("accountsTable");
+  let tRows = table.tBodies[0].rows.length;
+  let newRow = table.insertRow(tRows);
+
+  // Start adding cells with HTML across new row
+  let cell1 = newRow.insertCell(0);
+  tRows--;
+  cell1.innerHTML = `<input type="text" id="receipt${String(
+    tRows
+  )}" value="Receipt ${String(tRows)}" required />`;
+
+  let cell2 = newRow.insertCell(1);
+  cell2.innerHTML = `<input
+type="number"
+value="0"
+id="u${tRows}r"
+onchange="updateReceiptFigs()"
+/>`;
+
+  let cell3 = newRow.insertCell(2);
+  cell3.innerHTML = `<input
+type="number"
+value="0"
+id="r${tRows}r"
+onchange="updateReceiptFigs()"
+/>`;
+
+  let cell4 = newRow.insertCell(3);
+  cell4.innerHTML = `<input
+type="number"
+value="0"
+id="e${tRows}r"
+onchange="updateReceiptFigs()"
+/>`;
+
+  let cell5 = newRow.insertCell(4);
+  cell5.innerHTML = `<input
+type="number"
+value="0"
+id="t${tRows}r"
+disabled
+/>`;
+
+  let cell6 = newRow.insertCell(5);
+  cell6.innerHTML = `<input
+type="number"
+value="0"
+id="p${tRows}r" 
+onchange="updateReceiptFigs()"
+/>`;
+};
+
+const updatePaymentFigs = () => {
+  //Set Table Variables
+  const table = document.getElementById("accountsTable");
+  let tRows = table.tBodies[3].rows.length - 1;
+
+  //Set Variables
+  let i,
+    uf = 0,
+    rf = 0,
+    ef = 0,
+    total = 0,
+    pf = 0,
+    urTotal = 0,
+    rTotal = 0,
+    eTotal = 0,
+    totalFunds = 0,
+    pTotal = 0;
+
+  // Loop through each row to get column totals
+  for (i = 1; i < tRows; i++) {
+    uf = Number(document.getElementById(`u${String(i)}p`).value);
+    rf = Number(document.getElementById(`r${String(i)}p`).value);
+    ef = Number(document.getElementById(`e${String(i)}p`).value);
+    pf = Number(document.getElementById(`p${String(i)}p`).value);
+    total = uf + rf + ef;
+    document.getElementById(`t${String(i)}p`).value = total;
+    urTotal += uf;
+    rTotal += rf;
+    eTotal += ef;
+    totalFunds += total;
+    pTotal += pf;
+  }
+  // Update Payment Totals
+  document.getElementById("uFundsPTotal").innerHTML = urTotal;
+  document.getElementById("rFundsPTotal").innerHTML = rTotal;
+  document.getElementById("eFundsPTotal").innerHTML = eTotal;
+  document.getElementById("tFundsPTotal").innerHTML = totalFunds;
+  document.getElementById("pFundsPTotal").innerHTML = pTotal;
+
+  //Update net figures
+  updateNet();
+};
+
+const addPayment = () => {
+  //Create new row
+  const table = document.getElementById("accountsTable");
+  let tRows =
+    table.tBodies[0].rows.length +
+    table.tBodies[1].rows.length +
+    table.tBodies[2].rows.length +
+    table.tBodies[3].rows.length;
+  let newRow = table.insertRow(tRows);
+
+  //Create cells and update HTML
+  let cell1 = newRow.insertCell(0);
+  tRows = table.tBodies[3].rows.length - 2;
+  cell1.innerHTML = `<input type="text" id="payment${String(
+    tRows
+  )}" value="Payment ${String(tRows)}" required />`;
+
+  let cell2 = newRow.insertCell(1);
+  cell2.innerHTML = `<input
+  type="number"
+  value="0"
+  id="u${tRows}p"
+  onchange="updatePaymentFigs()"
+  />`;
+
+  let cell3 = newRow.insertCell(2);
+  cell3.innerHTML = `<input
+  type="number"
+  value="0"
+  id="r${tRows}p"
+  onchange="updatePaymentFigs()"
+  />`;
+
+  let cell4 = newRow.insertCell(3);
+  cell4.innerHTML = `<input
+  type="number"
+  value="0"
+  id="e${tRows}p"
+  onchange="updatePaymentFigs()"
+  />`;
+
+  let cell5 = newRow.insertCell(4);
+  cell5.innerHTML = `<input
+  type="number"
+  value="0"
+  id="t${tRows}p"
+  disabled
+  />`;
+
+  let cell6 = newRow.insertCell(5);
+  cell6.innerHTML = `<input
+  type="number"
+  value="0"
+  id="p${tRows}p" 
+  onchange="updatePaymentFigs()"
+  />`;
+};
+
+const updateNet = () => {
+  // Set Receipt Variables
+  const uReceipts = Number(document.getElementById("uFundsRTotal").innerHTML);
+  const rReceipts = Number(document.getElementById("rFundsRTotal").innerHTML);
+  const eReceipts = Number(document.getElementById("eFundsRTotal").innerHTML);
+  const totalReceipts = Number(
+    document.getElementById("tFundsRTotal").innerHTML
+  );
+  const pReceipts = Number(document.getElementById("pFundsRTotal").innerHTML);
+
+  // Set Payment Variables
+  const uPayments = Number(document.getElementById("uFundsPTotal").innerHTML);
+  const rPayments = Number(document.getElementById("rFundsPTotal").innerHTML);
+  const ePayments = Number(document.getElementById("eFundsPTotal").innerHTML);
+  const totalPayments = Number(
+    document.getElementById("tFundsPTotal").innerHTML
+  );
+  const pPayments = Number(document.getElementById("pFundsPTotal").innerHTML);
+
+  //Set Net Variables and Update Net Amounts
+  let uNet = uReceipts - uPayments;
+  let rNet = rReceipts - rPayments;
+  let eNet = eReceipts - ePayments;
+  let tNet = totalReceipts - totalPayments;
+  let pNet = pReceipts - pPayments;
+  document.getElementById("uNet").innerHTML = uNet;
+  document.getElementById("rNet").innerHTML = rNet;
+  document.getElementById("eNet").innerHTML = eNet;
+  document.getElementById("tNet").innerHTML = tNet;
+  document.getElementById("pNet").innerHTML = pNet;
+
+  // Set Transfer Variables
+  const uTransfer = Number(document.getElementById("uTransfer").value);
+  const rTransfer = Number(document.getElementById("rTransfer").value);
+  const eTransfer = Number(document.getElementById("eTransfer").value);
+  const tTransfer = Number(document.getElementById("tTransfer").value);
+  const pTransfer = Number(document.getElementById("pTransfer").value);
+
+  // Set Opening Balance Variables
+  const uOpening = Number(document.getElementById("uOpening").value);
+  const rOpening = Number(document.getElementById("rOpening").value);
+  const eOpening = Number(document.getElementById("eOpening").value);
+  const tOpening = Number(document.getElementById("tOpening").value);
+  const pOpening = Number(document.getElementById("pOpening").value);
+
+  //Update Closing Amounts
+  document.getElementById("uClosing").innerHTML = uNet + uTransfer + uOpening;
+  document.getElementById("rClosing").innerHTML = rNet + rTransfer + rOpening;
+  document.getElementById("eClosing").innerHTML = eNet + eTransfer + eOpening;
+  document.getElementById("tClosing").innerHTML = tNet + tTransfer + tOpening;
+  document.getElementById("pClosing").innerHTML = pNet + pTransfer + pOpening;
+};
+
+const updateTransfers = () => {
+  //Update Transfers
+  const uTransfer = Number(document.getElementById("uTransfer").value);
+  const rTransfer = Number(document.getElementById("rTransfer").value);
+  const eTransfer = Number(document.getElementById("eTransfer").value);
+  let tTransfer = document.getElementById("tTransfer");
+  tTransfer.value = uTransfer + rTransfer + eTransfer;
+
+  // Update Net
+  updateNet();
+};
+
+const updateFunds = () => {
+  //Update Opening Cash Funds total
+  const uOpening = Number(document.getElementById("uOpening").value);
+  const rOpening = Number(document.getElementById("rOpening").value);
+  const eOpening = Number(document.getElementById("eOpening").value);
+  let tOpening = document.getElementById("tOpening");
+  tOpening.value = uOpening + rOpening + eOpening;
+
+  // Update Net
+  updateNet();
+};
+
+const print = () => {
+  //Transfer table to new sheet
+  let htmlTable = document.getElementById("accounts").innerHTML;
+  let printSheet = window.open();
+  printSheet.document.write(htmlTable);
+
+  // Change input values on original table
+  let i,
+    val,
+    input = document
+      .getElementById("accountsTable")
+      .getElementsByTagName("input"),
+    span,
+    newInput = printSheet.document
+      .getElementById("accountsTable")
+      .getElementsByTagName("input");
+  inputCount = document.getElementsByTagName("input").length - 5;
+
+  for (i = inputCount; i > -1; i--) {
+    val = input[i].value;
+    span = document.createElement("span");
+    span.innerHTML = val;
+    let td = newInput[i].parentNode;
+    if (input[i].type == "number") {
+      td.setAttribute("style", "text-align: center");
+    }
+    td.removeChild(newInput[i]);
+    td.appendChild(span);
+  }
+
+  // Change style of total numbers
+  let els = printSheet.document.querySelectorAll(".total-number");
+  for (i = 0; i < els.length; i++) {
+    els[i].setAttribute("style", "text-align: center");
+  }
+
+  // Change font of accounts
+  let table = printSheet.document.getElementById("accountsTable");
+  const font = document.getElementById("fontSelection").value;
+  table.setAttribute("style", `font-family: ${font}`);
+
+  // Remove Buttons
+  let buttons = table.getElementsByTagName("button");
+  for (i = buttons.length - 1; i > -1; i--) {
+    let button = buttons[i].parentNode;
+    button.removeChild(buttons[i]);
+  }
+
+  //Add Headers
+  const name = document.getElementById("charityName").value;
+
+  // manipulate date
+  let yearEnd = new Date(document.getElementById("yearEnd").value);
+  yearEnd = changeDate(yearEnd);
+
+  let newTitle = printSheet.document.createElement("header");
+  newTitle.innerHTML = `<h3>${name} <br> Receipts and Payments Accounts <br>for the year ended ${yearEnd}</h3>`;
+  let header = printSheet.document.body;
+  newTitle.style.fontFamily = font;
+  newTitle.style.textAlign = "center";
+  header.parentNode.insertBefore(newTitle, header);
+
+  //Remove Blank Columns
+  deleteBlankFunds(input, inputCount, printSheet);
+  deleteBlankRows(input, inputCount, printSheet);
+};
+
+const changeDate = (dateValue) => {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const yMonth = months[dateValue.getMonth()];
+  const yYear = dateValue.getFullYear();
+  const yDay = dateValue.getDate();
+  return `${yDay} ${yMonth} ${yYear}`;
+};
+
+const deleteBlankFunds = (input, inputCount, newSheet) => {
+  //Calculate whether all restricted / endowment values are zero in order to delete columns
+  let rCount = 0,
+    rBlank = 0,
+    eCount = 0,
+    eBlank = 0,
+    row = newSheet.document.getElementById("accountsTable").rows;
+
+  //Tally up 0 values against value count
+  for (i = inputCount; i > -1; i--) {
+    if (input[i].type == "number") {
+      if (input[i].id.slice(0, 1) == "r") {
+        rCount += 1;
+        if (input[i].value == "0") {
+          rBlank += 1;
+        }
+      } else if (input[i].id.slice(0, 1) == "e") {
+        eCount += 1;
+        if (input[i].value == "0") {
+          eBlank += 1;
+        }
+      }
+    }
+  }
+  // Delete columns if appropriate
+  if (eCount === eBlank) {
+    for (let i = 0; i < row.length; i++) {
+      if (row[i].cells.length > 1) {
+        row[i].deleteCell(3);
+      }
+    }
+  }
+  if (rCount === rBlank) {
+    for (let i = 0; i < row.length; i++) {
+      if (row[i].cells.length > 1) {
+        row[i].deleteCell(2);
+      }
+    }
+  }
+};
+
+const deleteBlankRows = (input, inputCount, newSheet) => {
+  // See if option ticked
+  if (document.getElementById("removeRows").checked == true) {
+    // Set Variables
+    let uValue, rValue, eValue, pValue, row;
+    //Loop through each row in reverse order
+    for (i = inputCount; i > -1; i--) {
+      let x = input[i].id.slice(-2, -1);
+      if (isNaN(Number(x))) {
+        //do nothing
+      } else {
+        //look through amounts
+        let t = input[i].id.slice(-1);
+        uValue = Number(document.getElementById(`u${x}${t}`).value);
+        rValue = Number(document.getElementById(`r${x}${t}`).value);
+        eValue = Number(document.getElementById(`e${x}${t}`).value);
+        pValue = Number(document.getElementById(`p${x}${t}`).value);
+        if (t == "p") {
+          if (uValue == 0 && 0 == eValue && 0 == pValue && rValue == 0) {
+            row = input[i].parentNode.parentNode.rowIndex;
+            newSheet.document.getElementById("accountsTable").deleteRow(row);
+            i -= 4;
+          }
+        } else if (t == "r") {
+          if (uValue == 0 && 0 == eValue && 0 == pValue && rValue == 0) {
+            row = input[i].parentNode.parentNode.rowIndex;
+            newSheet.document.getElementById("accountsTable").deleteRow(row);
+          i -= 4;
+          }
+        } else {
+          console.log(t);
+        }
+      }
+    }
+  }
+};
+
+const toggleHeaders = (event) => {
+  var span, input, text;
+
+  // Get the event (handle MS difference)
+  event = event || window.event;
+
+  // Get the root element of the event (handle MS difference)
+  span = event.target || event.srcElement;
+
+  // If it's a span...
+  if (span && span.tagName.toUpperCase() === "SPAN") {
+    // Hide it
+    span.style.display = "none";
+
+    // Get its text
+    text = span.innerHTML;
+
+    // Create an input
+    input = document.createElement("input");
+    input.type = "text";
+    input.value = text;
+    // input.size = Math.max((text.length / 4) * 3, 4);
+    span.parentNode.insertBefore(input, span);
+
+    // Focus it, hook blur to undo
+    input.focus();
+    input.onblur = function () {
+      // Remove the input
+      span.parentNode.removeChild(input);
+
+      // Update the span
+      span.innerHTML = input.value == "" ? "&nbsp;" : input.value;
+
+      // Show the span again
+      span.style.display = "";
+    };
+  }
+};
